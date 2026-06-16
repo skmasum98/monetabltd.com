@@ -1,47 +1,47 @@
 ---
-// src/layouts/Layout.astro
 import '../styles/global.css'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import BackToTop from '../components/BackToTop.astro'
 
-// 1. Define Props to dynamically set title and description
 export interface Props {
 	title: string;
-    description?: string;
+	description?: string;
 }
 
 const { title, description } = Astro.props;
+const siteDescription = description || 'MONE TAB LIMITED supplies quality personal care, beverages, household goods, confectionery, wellness, and baby care products to trade customers across the UK.';
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site || Astro.url.origin);
 ---
 
 <!doctype html>
-<!-- 2. Add scroll-smooth for better UX with anchor links -->
 <html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="canonical" href={canonicalUrl} />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 			crossorigin="anonymous"
 		/>
 		<meta name="generator" content={Astro.generator} />
-
-        <!-- 3. Use dynamic title from props (CRITICAL FOR SEO) -->
-        <title>{title}</title>
-        
-        <!-- 4. Add dynamic meta description for SEO -->
-        <meta name="description" content={description || 'MONE TAB LIMITED is a wholesale provider of premium household goods, personal care, and confectionery products in the UK.'} />
+		<meta name="theme-color" content="#0f766e" />
+		<meta name="description" content={siteDescription} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={siteDescription} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content="/hero.avif" />
+		<title>{title}</title>
 	</head>
 	
-    <!-- 5. Remove unnecessary internal style block -->
-	<body>
+	<body class="min-h-screen antialiased">
 		<Header />
-        <!-- Set a max width and margin for main content area -->
-        <main class="mx-auto">
+		<main>
 		    <slot />
-        </main>
+		</main>
 		<Footer />
 		<BackToTop />
 	</body>

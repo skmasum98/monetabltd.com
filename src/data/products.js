@@ -264,11 +264,231 @@ export const products = [
   stock: "Limited Stock",
   features: ["High protein", "Natural ingredients", "Energy boost"],
   minimumOrder: 1
+},
+{
+  id: 25,
+  name: "Premium Shampoo & Conditioner Set",
+  category: "personal-care",
+  description: "Professional-grade shampoo and conditioner duo. Strengthens and nourishes hair. Paraben-free formula.",
+  image: "https://m.media-amazon.com/images/I/61bqXk+cgOL._AC_UF894,1000_QL80_.jpg",
+  packaging: "Case of 12 x 250ml bottles",
+  stock: "In Stock",
+  features: ["Paraben-free", "Professional grade", "Strengthening formula"],
+  minimumOrder: 1
+},
+{
+  id: 26,
+  name: "Energy Drink Assortment",
+  category: "beverages",
+  description: "Mixed energy drink selection with various flavors. Perfect for gym, convenience stores, and sports venues.",
+  image: "https://m.media-amazon.com/images/I/71yxwF2OMpL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 24 x 250ml cans",
+  stock: "In Stock",
+  features: ["Multiple flavors", "250ml cans", "High energy"],
+  minimumOrder: 1
+},
+{
+  id: 27,
+  name: "Dishwasher Tablets",
+  category: "household",
+  description: "Powerful dishwasher tablets with triple-action formula. Cuts through grease and baked-on food.",
+  image: "https://m.media-amazon.com/images/I/71+Y8FAVX0L._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 5 x 50 tablets",
+  stock: "In Stock",
+  features: ["Triple-action", "Grease-cutting", "Baked-on food removal"],
+  minimumOrder: 1
+},
+{
+  id: 28,
+  name: "Gourmet Caramel Candies",
+  category: "confectionery",
+  description: "Handcrafted caramel candies with sea salt. Wrapped individually for retail convenience.",
+  image: "https://m.media-amazon.com/images/I/81bkeo8b9ZL._AC_SL1500_.jpg",
+  packaging: "Box of 200 pieces",
+  stock: "In Stock",
+  features: ["Handcrafted", "Sea salt blend", "Individual wrapped"],
+  minimumOrder: 1
+},
+{
+  id: 29,
+  name: "Probiotic Yogurt",
+  category: "health-wellness",
+  description: "Live probiotic yogurt with natural cultures. Supports digestive health and gut wellness.",
+  image: "https://m.media-amazon.com/images/I/81mDsSw53NL._AC_SL1500_.jpg",
+  packaging: "Case of 24 x 150g cups",
+  stock: "In Stock",
+  features: ["Live cultures", "Digestive support", "Natural ingredients"],
+  minimumOrder: 1
+},
+{
+  id: 30,
+  name: "Baby Wet Wipes",
+  category: "baby-care",
+  description: "Hypoallergenic baby wipes with aloe vera. Gentle on delicate skin. Paraben and alcohol-free.",
+  image: "https://m.media-amazon.com/images/I/619d6oti+nL._AC_SX679_PIbundle-52,TopRight,0,0_SH20_.jpg",
+  packaging: "Case of 8 x 80 wipes",
+  stock: "In Stock",
+  features: ["Hypoallergenic", "Aloe vera", "Paraben-free"],
+  minimumOrder: 1
+},
+{
+  id: 31,
+  name: "Luxury Face Cream",
+  category: "personal-care",
+  description: "Anti-aging face cream with retinol and peptides. Deep moisturizing formula for all skin types.",
+  image: "https://m.media-amazon.com/images/I/918iu+f5wUL._AC_SL1500_.jpg",
+  packaging: "Case of 24 x 50ml jars",
+  stock: "Limited Stock",
+  features: ["Anti-aging", "Retinol-peptide", "Deep moisture"],
+  minimumOrder: 1
+},
+{
+  id: 32,
+  name: "Cold Brew Coffee",
+  category: "beverages",
+  description: "Premium cold brew coffee concentrate. Ready to drink or dilute. Smooth, rich flavor profile.",
+  image: "https://m.media-amazon.com/images/I/71crQmSclcL._AC_SX679_PIbundle-12,TopRight,0,0_SH20_.jpg",
+  packaging: "Case of 12 x 1L bottles",
+  stock: "In Stock",
+  features: ["Cold brew", "Smooth flavor", "Ready-to-drink"],
+  minimumOrder: 1
+},
+{
+  id: 33,
+  name: "Toilet Paper Rolls",
+  category: "household",
+  description: "Premium 3-ply toilet paper rolls. Soft, strong, and septic-safe. Bulk case for commercial use.",
+  image: "https://m.media-amazon.com/images/I/51WwAKN0l7L._AC_SX425_.jpg",
+  packaging: "Case of 96 rolls",
+  stock: "In Stock",
+  features: ["3-ply", "Septic-safe", "Bulk pack"],
+  minimumOrder: 1
+},
+{
+  id: 34,
+  name: "Premium Dark Chocolate Bar",
+  category: "confectionery",
+  description: "70% cocoa dark chocolate bar. Fair-trade certified. Perfect for chocolate enthusiasts.",
+  image: "https://m.media-amazon.com/images/I/81YJ+rcULaL._AC_SX679_PIbundle-3,TopRight,0,0_SH20_.jpg",
+  packaging: "Case of 24 x 100g bars",
+  stock: "In Stock",
+  features: ["70% cocoa", "Fair-trade", "Premium quality"],
+  minimumOrder: 1
+},
+{
+  id: 35,
+  name: "Collagen Supplement Powder",
+  category: "health-wellness",
+  description: "Hydrolyzed collagen powder for skin, hair, and joint health. Unflavored for easy mixing.",
+  image: "https://m.media-amazon.com/images/I/81ZgAmAYx0L._AC_SX679_.jpg",
+  packaging: "Jar of 200g",
+  stock: "In Stock",
+  features: ["Hydrolyzed", "Joint support", "Unflavored"],
+  minimumOrder: 1
+},
+{
+  id: 36,
+  name: "Organic Baby Formula",
+  category: "baby-care",
+  description: "Organic infant formula with probiotics. Closest to breast milk composition. DHA & ARA enriched.",
+  image: "https://m.media-amazon.com/images/I/51SP-qLFkkL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 6 x 800g tins",
+  stock: "In Stock",
+  features: ["Organic", "With probiotics", "DHA & ARA enriched"],
+  minimumOrder: 1
+},
+{
+  id: 37,
+  name: "Toothpaste Tube Bundle",
+  category: "personal-care",
+  description: "Whitening toothpaste with fluoride. Minty fresh flavor. Anti-cavity protection.",
+  image: "https://m.media-amazon.com/images/I/71mQ1LoaIPL._AC_SL1500_.jpg",
+  packaging: "Case of 24 x 150ml tubes",
+  stock: "In Stock",
+  features: ["Whitening", "Fluoride", "Anti-cavity"],
+  minimumOrder: 1
+},
+{
+  id: 38,
+  name: "Coconut Water",
+  category: "beverages",
+  description: "Pure coconut water from young coconuts. Natural electrolytes and minerals. No added sugar.",
+  image: "https://m.media-amazon.com/images/I/811gTVEMNcL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 12 x 500ml tetra packs",
+  stock: "In Stock",
+  features: ["100% natural", "No added sugar", "Electrolytes"],
+  minimumOrder: 1
+},
+{
+  id: 39,
+  name: "Surface Disinfectant Spray",
+  category: "household",
+  description: "Hospital-grade surface disinfectant. Kills 99.99% of bacteria and viruses. EPA approved.",
+  image: "https://m.media-amazon.com/images/I/81R2FKQDvhL._AC_SX679_PIbundle-6,TopRight,0,0_SH20_.jpg",
+  packaging: "Case of 12 x 500ml spray bottles",
+  stock: "In Stock",
+  features: ["Hospital-grade", "99.99% kill rate", "EPA approved"],
+  minimumOrder: 1
+},
+{
+  id: 40,
+  name: "Organic Gummy Bears",
+  category: "confectionery",
+  description: "Organic fruit gummy bears with natural colors and flavors. No artificial ingredients.",
+  image: "https://m.media-amazon.com/images/I/61jn1pWihSL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 20 x 200g bags",
+  stock: "In Stock",
+  features: ["Organic", "Natural colors", "No artificial ingredients"],
+  minimumOrder: 1
+},
+{
+  id: 41,
+  name: "Omega-3 Fish Oil Capsules",
+  category: "health-wellness",
+  description: "Premium omega-3 fish oil with EPA and DHA. Supports heart and brain health. Enteric-coated.",
+  image: "https://m.media-amazon.com/images/I/712pjUX9fRL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Bottle of 120 capsules",
+  stock: "In Stock",
+  features: ["EPA & DHA", "Heart health", "Enteric-coated"],
+  minimumOrder: 1
+},
+{
+  id: 42,
+  name: "Baby Diaper Pants",
+  category: "baby-care",
+  description: "Premium soft baby diaper pants. Wetness indicator. Gentle elastic for comfortable fit.",
+  image: "https://m.media-amazon.com/images/I/61Ds1Bof0pL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 4 x 50 pieces",
+  stock: "In Stock",
+  features: ["Wetness indicator", "Soft elastic", "Comfortable fit"],
+  minimumOrder: 1
+},
+{
+  id: 43,
+  name: "Deodorant Stick",
+  category: "personal-care",
+  description: "Long-lasting aluminum-free deodorant. 24-hour protection with natural fragrances.",
+  image: "https://m.media-amazon.com/images/I/615VMHRYRTL._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 24 x 50ml sticks",
+  stock: "In Stock",
+  features: ["Aluminum-free", "24-hour protection", "Natural fragrance"],
+  minimumOrder: 1
+},
+{
+  id: 44,
+  name: "Sparkling Lemonade",
+  category: "beverages",
+  description: "Refreshing sparkling lemonade made from real lemons. No high fructose corn syrup.",
+  image: "https://m.media-amazon.com/images/I/61CqM9CCw8L._AC_UL480_FMwebp_QL65_.jpg",
+  packaging: "Case of 24 x 330ml cans",
+  stock: "In Stock",
+  features: ["Real lemons", "Sparkling", "No HFCS"],
+  minimumOrder: 1
 }
 ];
 
 export const categories = {
-  'personal-care': { name: 'Personal Care', color: 'bg-blue-600' },
+  'personal-care': { name: 'Personal Care', color: 'bg-cyan-600' },
   'beverages': { name: 'Beverages', color: 'bg-green-600' },
   'household': { name: 'Household', color: 'bg-amber-600' },
   'confectionery': { name: 'Confectionery', color: 'bg-red-600' },

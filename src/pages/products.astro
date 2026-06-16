@@ -8,21 +8,21 @@ import { products, categories } from '../data/products.js';
 <Layout title="Our Products | MONE TAB LIMITED" description="Explore our premium range of wholesale products including personal care, beverages, household goods, and more. Quality products at competitive prices.">
 
   <!-- Products Hero Section -->
-  <section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-24 overflow-hidden">
+  <section class="relative bg-gradient-to-br from-slate-900 via-cyan-950 to-slate-900 text-white py-24 overflow-hidden">
     <div class="absolute inset-0">
-      <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[120px]"></div>
-      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[150px]"></div>
+      <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[150px]"></div>
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <span class="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Our Catalog</span>
+        <span class="inline-block bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Our Catalog</span>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
           Premium
-          <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Products</span>
+          <span class="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">Products</span>
         </h1>
-        <p class="text-xl text-blue-200 leading-relaxed max-w-2xl mx-auto mb-8">
-          Discover our extensive range of quality wholesale products for your business
+        <p class="text-xl text-cyan-200 leading-relaxed max-w-2xl mx-auto mb-8">
+          Browse our curated wholesale catalog for retailers, hospitality teams, healthcare providers and trade customers.
         </p>
 
         <!-- Category Filter Pills -->
@@ -60,23 +60,23 @@ import { products, categories } from '../data/products.js';
               type="text" 
               id="product-search" 
               placeholder="Search products..." 
-              class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+              class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-300"
             >
             <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
           </div>
         </div>
         
         <div class="flex items-center gap-4">
-          <select id="sort-products" class="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300">
+          <select id="sort-products" class="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all duration-300">
             <option value="name">Sort by Name</option>
             <option value="category">Sort by Category</option>
           </select>
           
           <div class="flex items-center gap-2">
-            <button id="grid-view" class="p-2 rounded-lg border border-gray-300 hover:bg-blue-50 transition-colors duration-300 active">
+            <button id="grid-view" class="p-2 rounded-lg border border-gray-300 hover:bg-cyan-50 transition-colors duration-300 active">
               <i class="fas fa-th-large text-gray-600"></i>
             </button>
-            <button id="list-view" class="p-2 rounded-lg border border-gray-300 hover:bg-blue-50 transition-colors duration-300">
+            <button id="list-view" class="p-2 rounded-lg border border-gray-300 hover:bg-cyan-50 transition-colors duration-300">
               <i class="fas fa-list text-gray-600"></i>
             </button>
           </div>
@@ -100,18 +100,18 @@ import { products, categories } from '../data/products.js';
   </section>
 
   <!-- Bulk Order CTA -->
-  <section class="relative bg-gradient-to-br from-blue-800 via-blue-900 to-slate-900 text-white py-24 overflow-hidden">
+  <section class="relative bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-24 overflow-hidden">
     <div class="absolute inset-0">
       <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[120px]"></div>
-      <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[150px]"></div>
+      <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[150px]"></div>
     </div>
 
     <div class="container mx-auto px-4 text-center relative z-10">
       <h2 class="text-4xl md:text-5xl font-bold mb-6">Need Bulk Quantities?</h2>
-      <p class="text-xl text-blue-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-xl text-cyan-200 mb-10 max-w-2xl mx-auto leading-relaxed">
         Get special pricing for large orders and custom packaging options.
       </p>
-      <a href="/contact" class="inline-flex items-center gap-2 bg-white text-blue-800 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+      <a href="/contact" class="inline-flex items-center gap-2 bg-white text-cyan-900 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
         <i class="fas fa-envelope"></i>
         Request Bulk Quote
       </a>
@@ -165,12 +165,30 @@ import { products, categories } from '../data/products.js';
   document.addEventListener('DOMContentLoaded', function() {
     // Type-safe element selection with null checks
     const categoryFilters = document.querySelectorAll<HTMLButtonElement>('.category-filter');
-    const productCards = document.querySelectorAll<HTMLElement>('.product-card');
+    const productCards = Array.from(document.querySelectorAll<HTMLElement>('.product-card'));
     const searchInput = document.getElementById('product-search') as HTMLInputElement | null;
     const gridViewBtn = document.getElementById('grid-view') as HTMLButtonElement | null;
     const listViewBtn = document.getElementById('list-view') as HTMLButtonElement | null;
     const productsContainer = document.getElementById('products-container') as HTMLElement | null;
     const noResults = document.getElementById('no-results') as HTMLElement | null;
+
+    function shuffleArray<T>(array: T[]) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function shuffleProducts() {
+      if (!productsContainer || productCards.length === 0) return;
+      const shuffled = [...productCards];
+      shuffleArray(shuffled);
+      shuffled.forEach((card) => productsContainer.appendChild(card));
+    }
+
+    if (productsContainer) {
+      shuffleProducts();
+    }
 
     // Category Filter
     categoryFilters.forEach((filter: HTMLButtonElement) => {

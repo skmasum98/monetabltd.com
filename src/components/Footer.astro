@@ -1,65 +1,92 @@
 ---
 const year = new Date().getFullYear();
+
+const quickLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/services', label: 'Services' },
+  { href: '/about', label: 'About Us' },
+  { href: '/contact', label: 'Contact' },
+];
+
+const categories = [
+  { href: '/products#personal-care', label: 'Personal Care' },
+  { href: '/products#beverages', label: 'Beverages' },
+  { href: '/products#household', label: 'Household Goods' },
+  { href: '/products#confectionery', label: 'Confectionery' },
+  { href: '/products#health-wellness', label: 'Health & Wellness' },
+  { href: '/products#baby-care', label: 'Baby Care' },
+];
 ---
 
-<footer class="border-t border-slate-200 bg-linear-to-br from-slate-50 to-white py-10">
-  <div class="container mx-auto px-6">
-    <div class="grid gap-10 md:grid-cols-4">
-      <!-- Company Info -->
+<footer class="border-t border-slate-200 bg-[#f6f8fb]">
+  <div class="container-page py-12">
+    <div class="grid gap-10 lg:grid-cols-[1.25fr_0.75fr_0.9fr_1.1fr]">
       <div>
-        <h2 class="text-xl font-bold text-slate-800 mb-3">MONE TAB LIMITED</h2>
-        <p class="text-sm text-slate-600 leading-relaxed">
-          Providing premium quality products across personal care, beverages, and more — trusted by professionals and consumers alike.
+        <a href="/" class="inline-flex items-center gap-3">
+          <img src="/logo.png" alt="MONE TAB LIMITED logo" class="h-12 w-auto" />
+          <span class="text-lg font-black tracking-wide text-slate-950">MONE TAB LIMITED</span>
+        </a>
+        <p class="mt-4 max-w-sm text-sm leading-6 text-slate-600">
+          Wholesale supply for retailers, hospitality teams, offices and trade buyers who need dependable stock across personal care, beverages, household goods, and more.
         </p>
+        <a href="/contact" class="mt-5 inline-flex items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#115e59]">
+          Request a trade quote
+          <i class="fas fa-arrow-right text-xs"></i>
+        </a>
       </div>
 
-      <!-- Quick Links -->
       <div>
-        <h3 class="text-lg font-semibold text-slate-800 mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-sm text-slate-600">
-          <li><a href="/" class="hover:text-blue-600 transition">Home</a></li>
-          <li><a href="/about" class="hover:text-blue-600 transition">About Us</a></li>
-          <li><a href="/products" class="hover:text-blue-600 transition">Product Catalog</a></li>
-          <li><a href="/contact" class="hover:text-blue-600 transition">Contact</a></li>
-          <!-- Privacy Policy -->
-          <li><a href="/privacy" class="hover:text-blue-600 transition">Privacy Policy</a></li>
-          <li><a href="/terms" class="hover:text-blue-600 transition">Terms of Service</a></li>
+        <h2 class="text-sm font-black uppercase tracking-wider text-slate-950">Company</h2>
+        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+          {quickLinks.map((link) => (
+            <li><a href={link.href} class="transition hover:text-[#0f766e]">{link.label}</a></li>
+          ))}
+          <li><a href="/privacy" class="transition hover:text-[#0f766e]">Privacy Policy</a></li>
+          <li><a href="/terms" class="transition hover:text-[#0f766e]">Terms of Service</a></li>
         </ul>
       </div>
 
-      <!-- Categories -->
       <div>
-        <h3 class="text-lg font-semibold text-slate-800 mb-3">Our Categories</h3>
-        <ul class="space-y-2 text-sm text-slate-600">
-          <li><a href="/products#personal-care" class="hover:text-blue-600 transition">Personal Care</a></li>
-          <li><a href="/products#beverages" class="hover:text-blue-600 transition">Beverages</a></li>
-          <li><a href="/products#confectionery" class="hover:text-blue-600 transition">Confectionery</a></li>
-          <li><a href="/products#kitchenware" class="hover:text-blue-600 transition">Kitchenware</a></li>
+        <h2 class="text-sm font-black uppercase tracking-wider text-slate-950">Categories</h2>
+        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+          {categories.map((category) => (
+            <li><a href={category.href} class="transition hover:text-[#1d5f8f]">{category.label}</a></li>
+          ))}
         </ul>
       </div>
 
-      <!-- Contact Info -->
       <div>
-        <h3 class="text-lg font-semibold text-slate-800 mb-3">Contact Us</h3>
-        <ul class="text-sm text-slate-600 space-y-2">
-          <li>📍 3rd Floor Belmont Road, Uxbridge, England, UB8 1HE</li>
-          <li>✉️ info@monetabltd.com</li>
-          <li>🌐 <a href="https://monetabltd.com/" class="hover:text-blue-600 transition">monetabltd.com</a></li>
+        <h2 class="text-sm font-black uppercase tracking-wider text-slate-950">Contact</h2>
+        <ul class="mt-4 space-y-4 text-sm leading-6 text-slate-600">
+          <li class="flex gap-3">
+            <i class="fas fa-location-dot mt-1 text-[#1f9d84]"></i>
+            <span>82a James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28 7DE</span>
+          </li>
+          <li class="flex gap-3">
+            <i class="fas fa-phone mt-1 text-[#1f9d84]"></i>
+            <a href="tel:+441234567890" class="transition hover:text-[#1d5f8f]">+44 1234 567 890</a>
+          </li>
+          <li class="flex gap-3">
+            <i class="fas fa-envelope mt-1 text-[#1f9d84]"></i>
+            <a href="mailto:info@monetabltd.com" class="transition hover:text-[#1d5f8f]">info@monetabltd.com</a>
+          </li>
+          <li class="flex gap-3">
+            <i class="fas fa-globe mt-1 text-[#1f9d84]"></i>
+            <a href="https://monetabltd.com/" class="transition hover:text-[#1d5f8f]">monetabltd.com</a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Divider -->
     <div class="my-8 border-t border-slate-200"></div>
 
-    <!-- Bottom bar -->
-    <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
-      <p class="text-sm text-slate-500">&copy; {year} MONE TAB LIMITED. All rights reserved.</p>
+    <div class="flex flex-col justify-between gap-4 text-sm text-slate-500 sm:flex-row sm:items-center">
+      <p>&copy; {year} MONE TAB LIMITED. All rights reserved.</p>
 
-      <p class="text-sm text-slate-500">
-        Designed & Developed by 
-        <a href="https://thewebpal.com" target="_blank" rel="noopener noreferrer" 
-           class="ml-1 font-semibold text-blue-600 hover:text-blue-700 transition">
+      <p>
+        Designed & Developed by
+        <a href="https://thewebpal.com" target="_blank" rel="noopener noreferrer" class="ml-1 font-semibold text-[#1d5f8f] transition hover:text-[#133d5d]">
           THEWEBPAL
         </a>
       </p>
